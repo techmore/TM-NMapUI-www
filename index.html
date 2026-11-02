@@ -441,7 +441,7 @@ cd TM-NmapUI</code></pre>
                                 <div class="relative">
                                     <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/
 Homebrew/install/HEAD/install.sh)"</code></pre>
-                                    <button onclick="copyCode(this, '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
+                                    <button onclick="copyCode(this, '/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
                                         <i data-lucide="copy" class="w-4 h-4"></i>
                                     </button>
                                 </div>
@@ -454,8 +454,8 @@ Homebrew/install/HEAD/install.sh)"</code></pre>
                             <div class="space-y-2 flex-1">
                                 <p class="font-semibold text-olive-900">Run Install Script</p>
                                 <div class="relative">
-                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>./install.sh</code></pre>
-                                    <button onclick="copyCode(this, './install.sh')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
+                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>./install.sh --no-daemon</code></pre>
+                                    <button onclick="copyCode(this, './install.sh --no-daemon')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
                                         <i data-lucide="copy" class="w-4 h-4"></i>
                                     </button>
                                 </div>
@@ -468,22 +468,22 @@ Homebrew/install/HEAD/install.sh)"</code></pre>
                             <div class="space-y-2 flex-1">
                                 <p class="font-semibold text-olive-900">Launch NMapUI</p>
                                 <div class="relative">
-                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>sudo npm start</code></pre>
-                                    <button onclick="copyCode(this, 'sudo npm start')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
+                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>./start.sh</code></pre>
+                                    <button onclick="copyCode(this, './start.sh')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
                                         <i data-lucide="copy" class="w-4 h-4"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
 
-                       <!-- Step 5 -->
+                        <!-- Step 5 -->
                         <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-olive-800 text-cream-100 flex items-center justify-center text-sm font-bold">4</div>
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-olive-800 text-cream-100 flex items-center justify-center text-sm font-bold">5</div>
                             <div class="space-y-2 flex-1">
-                                <p class="font-semibold text-olive-900">open localhost:9000</p>
+                                <p class="font-semibold text-olive-900">Open the dashboard</p>
                                 <div class="relative">
-                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>open localhost:9000</code></pre>
-                                    <button onclick="copyCode(this, 'localhost:9000')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
+                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>open http://127.0.0.1:9000</code></pre>
+                                    <button onclick="copyCode(this, 'open http://127.0.0.1:9000')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
                                         <i data-lucide="copy" class="w-4 h-4"></i>
                                     </button>
                                 </div>
@@ -511,7 +511,7 @@ Homebrew/install/HEAD/install.sh)"</code></pre>
                     <div class="space-y-4">
                         <div class="flex items-center gap-3">
                             <i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-olive-700">Node.js 18+</span>
+                            <span class="text-olive-700">Python 3.11+ and xsltproc</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
@@ -519,7 +519,7 @@ Homebrew/install/HEAD/install.sh)"</code></pre>
                         </div>
                         <div class="flex items-center gap-3">
                             <i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-olive-700">Linux, macOS, or Windows (WSL)</span>
+                            <span class="text-olive-700">macOS or Ubuntu scanner host</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
