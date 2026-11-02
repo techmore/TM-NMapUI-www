@@ -414,34 +414,31 @@
                 <div class="space-y-8">
                     <span class="inline-block px-3 py-1 rounded-full bg-olive-200/70 text-olive-800 text-xs font-semibold tracking-wide uppercase">Installation</span>
                     <h2 class="font-instrument text-4xl sm:text-5xl font-semibold text-olive-900">Get up and running in under 2 minutes</h2>
-                    <p class="text-olive-700 text-lg">Clone from GitHub, install dependencies, and start scanning. It's that simple.</p>
+                    <p class="text-olive-700 text-lg">One Homebrew command installs a pinned, checksummed release. The web app runs as your user; nothing needs <code class="bg-olive-200/50 px-1.5 py-0.5 rounded text-sm">sudo</code>.</p>
 
-                    <!-- Step 1 -->
                     <div class="space-y-5">
+                        <!-- Step 1 -->
                         <div class="flex gap-4">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-olive-800 text-cream-100 flex items-center justify-center text-sm font-bold">1</div>
                             <div class="space-y-2 flex-1">
-                                <p class="font-semibold text-olive-900">Clone the Repository</p>
+                                <p class="font-semibold text-olive-900">Install with Homebrew</p>
                                 <div class="relative">
-                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>git clone https://github.com/techmore/TM-NmapUI.git
-cd TM-NmapUI</code></pre>
-                                    <button onclick="copyCode(this, 'git clone https://github.com/techmore/TM-NmapUI.git\ncd TM-NmapUI')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
+                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>brew install techmore/tap/nmapui</code></pre>
+                                    <button onclick="copyCode(this, 'brew install techmore/tap/nmapui')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
                                         <i data-lucide="copy" class="w-4 h-4"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
 
-
                         <!-- Step 2 -->
                         <div class="flex gap-4">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-olive-800 text-cream-100 flex items-center justify-center text-sm font-bold">2</div>
                             <div class="space-y-2 flex-1">
-                                <p class="font-semibold text-olive-900">Install Brew</p>
+                                <p class="font-semibold text-olive-900">Start NmapUI (runs as you, never root)</p>
                                 <div class="relative">
-                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/
-Homebrew/install/HEAD/install.sh)"</code></pre>
-                                    <button onclick="copyCode(this, '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
+                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>brew services start nmapui</code></pre>
+                                    <button onclick="copyCode(this, 'brew services start nmapui')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
                                         <i data-lucide="copy" class="w-4 h-4"></i>
                                     </button>
                                 </div>
@@ -452,43 +449,17 @@ Homebrew/install/HEAD/install.sh)"</code></pre>
                         <div class="flex gap-4">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-olive-800 text-cream-100 flex items-center justify-center text-sm font-bold">3</div>
                             <div class="space-y-2 flex-1">
-                                <p class="font-semibold text-olive-900">Run Install Script</p>
+                                <p class="font-semibold text-olive-900">Open the dashboard</p>
                                 <div class="relative">
-                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>./install.sh</code></pre>
-                                    <button onclick="copyCode(this, './install.sh')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
+                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>open http://127.0.0.1:9000</code></pre>
+                                    <button onclick="copyCode(this, 'open http://127.0.0.1:9000')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
                                         <i data-lucide="copy" class="w-4 h-4"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Step 4 -->
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-olive-800 text-cream-100 flex items-center justify-center text-sm font-bold">4</div>
-                            <div class="space-y-2 flex-1">
-                                <p class="font-semibold text-olive-900">Launch NMapUI</p>
-                                <div class="relative">
-                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>sudo npm start</code></pre>
-                                    <button onclick="copyCode(this, 'sudo npm start')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
-                                        <i data-lucide="copy" class="w-4 h-4"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                       <!-- Step 5 -->
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-olive-800 text-cream-100 flex items-center justify-center text-sm font-bold">4</div>
-                            <div class="space-y-2 flex-1">
-                                <p class="font-semibold text-olive-900">open localhost:9000</p>
-                                <div class="relative">
-                                    <pre class="bg-olive-900 text-cream-100 rounded-xl px-5 py-3.5 text-sm font-mono overflow-x-auto"><code>open localhost:9000</code></pre>
-                                    <button onclick="copyCode(this, 'localhost:9000')" class="absolute top-3 right-3 p-1.5 rounded-lg bg-olive-700 hover:bg-olive-600 transition-colors text-cream-200" title="Copy">
-                                        <i data-lucide="copy" class="w-4 h-4"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="text-sm text-olive-600">Homebrew installs a pinned, checksummed release with hash-locked dependencies. On the first scan, macOS asks to allow local network access: choose <strong>Allow</strong>.</p>
                     </div>
 
                     <div class="flex flex-wrap gap-3">
@@ -511,15 +482,15 @@ Homebrew/install/HEAD/install.sh)"</code></pre>
                     <div class="space-y-4">
                         <div class="flex items-center gap-3">
                             <i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-olive-700">Node.js 18+</span>
+                            <span class="text-olive-700">macOS 13+ on Apple Silicon, with Homebrew</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-olive-700">Nmap 7.80+ installed</span>
+                            <span class="text-olive-700">Nmap and Python installed automatically</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-olive-700">Linux, macOS, or Windows (WSL)</span>
+                            <span class="text-olive-700">Ubuntu: see the README for the service installer</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
@@ -533,7 +504,7 @@ Homebrew/install/HEAD/install.sh)"</code></pre>
                     <div class="mt-6 p-4 bg-olive-50 rounded-xl border border-olive-200/30">
                         <p class="text-sm text-olive-600 flex items-start gap-2">
                             <i data-lucide="info" class="w-4 h-4 flex-shrink-0 mt-0.5"></i>
-                            <span><strong>Pro tip:</strong> Run with <code class="bg-olive-200/50 px-1.5 py-0.5 rounded text-xs">sudo</code> for SYN scans and OS detection features.</span>
+                            <span><strong>Privileged scans:</strong> SYN, OS and ARP scans are optional. Never run NmapUI itself with <code class="bg-olive-200/50 px-1.5 py-0.5 rounded text-xs">sudo</code>. A one-time setup installs a validating helper that is the only thing allowed to run nmap as root (see <code class="bg-olive-200/50 px-1.5 py-0.5 rounded text-xs">brew info nmapui</code> and the <a href="https://github.com/techmore/TM-NmapUI#install-with-homebrew-macos" target="_blank" rel="noopener" class="underline">README</a>).</span>
                         </p>
                     </div>
                 </div>
